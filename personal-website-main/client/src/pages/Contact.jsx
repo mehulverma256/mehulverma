@@ -277,7 +277,7 @@ const Contact = () => {
               </h2>
               <div className="space-y-6">
                 <a
-                  href="mailto:sidisadev@gmail.com"
+                  href="mailto:mehulverma256@gmail.com"
                   className="flex items-center gap-4 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                 >
                   <div className="flex-shrink-0 w-12 h-12 bg-primary-50 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
@@ -285,7 +285,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm">sidisadev@gmail.com</p>
+                    <p className="text-sm">mehulverma256@gmail.com</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300">
@@ -294,7 +294,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-sm">Hyderabad, India</p>
+                    <p className="text-sm">Bhopal, India</p>
                   </div>
                 </div>
                 {/* Add this right after the Location div in your Contact Info card */}
@@ -304,7 +304,7 @@ const Contact = () => {
                   className="mt-6"
                 >
                   <a
-                    href="https://drive.google.com/file/d/1UdTsuqi7-gCuH3Pzt2Od--pG-5j4Oy8L/view"
+                    href="https://drive.google.com/file/d/15-dpm4GOZaGcDgocW_dvcx1azSP48P2b/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative inline-flex items-center gap-3 px-8 py-4 w-full rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 text-white font-medium overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
@@ -344,19 +344,19 @@ const Contact = () => {
                   {
                     name: "LinkedIn",
                     icon: <FaLinkedinIn className="w-6 h-6" />,
-                    url: "https://www.linkedin.com/in/siddharth-singh-7155131a6/",
+                    url: "https://www.linkedin.com/in/mehul-verma-3469821a1/",
                     tooltip: "Connect with me on LinkedIn",
                   },
                   {
                     name: "Linktree",
                     icon: <SiLinktree className="w-6 h-6" />,
-                    url: "https://linktr.ee/STK_365",
+                    url: "https://linktr.ee/mehulverma",
                     tooltip: "Find all my important links",
                   },
                   {
                     name: "GitHub",
                     icon: <FaGithub className="w-6 h-6" />,
-                    url: "https://github.com/SIDTK365",
+                    url: "https://github.com/mehulverma256",
                     tooltip: "Check out my projects on GitHub",
                   },
                 ].map((social) => (

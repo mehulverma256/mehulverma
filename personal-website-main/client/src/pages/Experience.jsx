@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import AutocashLogo from "../assets/Autocash.jpeg";
-import PhilipsLogo from "../assets/Philips.jpeg";
+import Spectar from "../assets/spectargroup.jpeg";
+import ParkPlus from "../assets/parkplus.jpeg";
 import MadieeGamesLogo from "../assets/MadieeGames.jpeg";
 
 const Experience = () => {
   const experiences = [
     {
-      company: "Autocash.ai",
-      companyLogo: AutocashLogo,
+      company: "Spectar Group.ai",
+      companyLogo: Spectar,
       position: "Software Engineer",
       duration: "Jul 2023 - Present",
       location: "Hyderabad, IN",
@@ -33,8 +33,8 @@ const Experience = () => {
       category: "Full Stack Development",
     },
     {
-      company: "Philips",
-      companyLogo: PhilipsLogo,
+      company: "Park+",
+      companyLogo: ParkPlus,
       position: "Software Engineering Intern",
       duration: "Jan 2023 - Jul 2023",
       location: "Bangalore, IN",
@@ -263,7 +263,7 @@ const Experience = () => {
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <a
-              href="https://drive.google.com/file/d/1UdTsuqi7-gCuH3Pzt2Od--pG-5j4Oy8L/view"
+              href="https://drive.google.com/file/d/15-dpm4GOZaGcDgocW_dvcx1azSP48P2b/view"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 text-white font-medium overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
@@ -300,7 +300,7 @@ const Experience = () => {
           <p className="text-gray-600 dark:text-gray-300">
             Want to discuss opportunities? Let's connect on{" "}
             <a
-              href="https://www.linkedin.com/in/siddharth-singh-7155131a6/"
+              href="https://www.linkedin.com/in/mehul-verma-3469821a1/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-600 dark:text-primary-400 hover:underline font-medium"

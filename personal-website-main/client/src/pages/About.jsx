@@ -40,16 +40,16 @@ const About = () => {
     {
       icon: <SiLeetcode className="text-2xl text-[#FFA116]" />, // LeetCode's official color
       platform: "LeetCode",
-      stats: "500+ Problems",
+      stats: "570+ Problems",
       rank: "365 Days Badge",
-      url: "https://leetcode.com/STK_365/",
+      url: "https://leetcode.com/crazifire/",
     },
     {
       icon: <SiGeeksforgeeks className="text-2xl text-[#2F8D46]" />, // GFG's official color
       platform: "GeeksforGeeks",
-      stats: "115+ Problems",
+      stats: "500+ Problems ",
       rank: "Coding Enthusiast",
-      url: "https://www.geeksforgeeks.org/user/stk365/",
+      url: "https://www.geeksforgeeks.org/user/crazifire/",
     },
   ];
 
@@ -105,7 +105,7 @@ const About = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-normal pb-2 bg-[length:200%_auto] bg-gradient-to-r from-[#EC4899] via-purple-500 to-blue-500 hover:bg-gradient-to-r hover:from-orange-500 hover:via-green-500 hover:to-emerald-500 transition-all duration-500 bg-clip-text text-transparent hover:scale-[1.01] transform"
             whileHover={{ scale: 1.02 }}
           >
-            Hi, I'm Siddharth Singh
+            Hi, I'm Mehul Verma
           </motion.h1>
           <motion.p
             className="text-lg text-gray-600 dark:text-gray-300"
@@ -134,7 +134,7 @@ const About = () => {
                 <div className="relative pl-8 border-l-2 border-primary-500/30">
                   <div className="absolute left-0 top-0 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary-500"></div>
                   <h3 className="font-semibold text-lg text-gray-900 dark:text-white">
-                    Software Engineer at Autocash.ai
+                    Software Engineer at Spectar Group
                   </h3>
                   <p className="text-sm text-primary-600 dark:text-primary-400 mb-2">
                     2023 - Present
@@ -149,10 +149,10 @@ const About = () => {
                   <div className="absolute left-0 top-0 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary-500"></div>
                   <h3 className="font-semibold text-lg text-gray-900 dark:text-white">
                     <HiAcademicCap className="inline mr-2" />
-                    B.Tech in Computer Science
+                    B.Tech in Computer Science and Engineering (CSE)
                   </h3>
                   <p className="text-sm text-primary-600 dark:text-primary-400 mb-2">
-                    SRM Institute of Science & Technology
+                    National Institute of Technology, Bhopal (NIT Bhopal)
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
                     GPA: 9.28/10
@@ -272,12 +272,12 @@ const About = () => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://github.com/SIDTK365"
+                    href="https://github.com/mehulverma256"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-1"
                   >
-                    @SIDTK365
+                    @mehulverma256
                     <svg
                       className="w-4 h-4"
                       fill="none"
@@ -299,7 +299,7 @@ const About = () => {
                   className="overflow-hidden rounded-lg bg-white dark:bg-gray-700/50 p-4"
                 >
                   <GitHubCalendar
-                    username="SIDTK365"
+                    username="mehulverma256"
                     colorScheme={theme === "dark" ? "dark" : "light"}
                     fontSize={12}
                     blockSize={8}

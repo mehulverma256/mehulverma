@@ -9,25 +9,25 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/siddharth-singh-7155131a6/",
+      url: "https://www.linkedin.com/in/mehul-verma-3469821a1/",
       icon: <FaLinkedinIn className="w-6 h-6" />,
       tooltip: "Connect with me on LinkedIn",
     },
     {
       name: "Linktree",
-      url: "https://linktr.ee/STK_365",
+      url: "https://linktr.ee/mehulverma",
       icon: <SiLinktree className="w-6 h-6" />,
       tooltip: "Find all my important links",
     },
     {
       name: "GitHub",
-      url: "https://github.com/SIDTK365",
+      url: "https://github.com/mehulverma256",
       icon: <FaGithub className="w-6 h-6" />,
       tooltip: "Check out my projects on GitHub",
     },
     {
       name: "Email",
-      url: "mailto:sidisadev@gmail.com",
+      url: "mailto:mehulverma256@gmail.com",
       icon: <HiMail className="w-6 h-6" />,
       tooltip: "Send me an email",
     },
@@ -88,7 +88,7 @@ const Footer = () => {
             >
               ❤️
             </motion.span>
-            <span>by Sid</span>
+            <span>by Mehul Verma</span>
           </motion.div>
         </div>
       </div>

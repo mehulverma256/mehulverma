@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import laptopSvg from "../assets/laptop.svg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
+import Animation from "../assets/Animation.json"
+import Lottie from "lottie-react";
 
 const Home = () => {
   // Animation variants
@@ -29,7 +30,7 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 py-8 sm:py-12">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 pt-8 pb-0 sm:pt-12 sm:pb-0">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -59,7 +60,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 -mt-4 lg:-mt-24">
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center"
           variants={containerVariants}
@@ -67,12 +68,12 @@ const Home = () => {
           animate="visible"
         >
           {/* Left Content */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-4 sm:space-y-8">
             {/* Your existing left content code */}
             {/* Greeting */}
-            <motion.div variants={itemVariants} className="space-y-3">
+            <motion.div variants={itemVariants} className="space-y-1 sm:space-y-3">
               <motion.div whileHover={{ scale: 1.05 }} className="inline-block">
-                <span className="bg-primary-100 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400 px-6 py-3 rounded-full text-base sm:text-lg md:text-xl font-medium tracking-wide shadow-md hover:shadow-lg transition-all duration-300">
+                <span className="bg-primary-100 dark:bg-primary-900/50 text-primary-600 pl-4 sm:ml-24 sm:pl-6 dark:text-primary-400 px-6 py-3 rounded-full text-base sm:text-lg md:text-xl font-medium tracking-wide shadow-md hover:shadow-lg transition-all duration-300">
                   <motion.span
                     className="inline-block"
                     animate={{
@@ -90,15 +91,15 @@ const Home = () => {
                   {` Hi there, I'm`}
                 </span>
               </motion.div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-normal pb-2 bg-[length:200%_auto] bg-gradient-to-r from-[#EC4899] via-purple-500 to-blue-500 hover:bg-gradient-to-r hover:from-orange-500 hover:via-green-500 hover:to-emerald-500 transition-all duration-500 bg-clip-text text-transparent hover:scale-[1.01] transform">
-                Siddharth Singh
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl pl-3 sm:pl-32 font-bold tracking-tight leading-normal pb-0 -mb-8 bg-[length:200%_auto] bg-gradient-to-r from-[#EC4899] via-purple-500 to-blue-500 hover:bg-gradient-to-r hover:from-orange-500 hover:via-green-500 hover:to-emerald-500 transition-all duration-500 bg-clip-text text-transparent hover:scale-[1.01] transform">
+                Mehul Verma
               </h1>
             </motion.div>
 
             {/* Dynamic Title */}
             <motion.div
               variants={itemVariants}
-              className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 font-medium"
+              className="text-base sm:text-lg pl-3 sm:pl-32 lg:text-xl text-gray-600 dark:text-gray-300 font-medium -mt-8"
             >
               <Typewriter
                 options={{
@@ -124,7 +125,7 @@ const Home = () => {
             <motion.p
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg transition-all duration-300"
+              className="text-base sm:text-lg pl-3 sm:pl-32 text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg transition-all duration-300"
             >
               <span className="block mb-2 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
                 I build exceptional digital experiences and solve complex
@@ -139,12 +140,12 @@ const Home = () => {
             {/* CTA Buttons */}
             <motion.div
               variants={itemVariants}
-              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+              className="flex flex-col pl-1 sm:pl-32 sm:flex-row gap-4 w-full sm:w-auto"
             >
               {/* View My Work Button */}
               <Link
                 to="/about"
-                className="group relative px-6 sm:px-8 py-3 rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 text-white font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
+                className="group relative px-6 sm:px-8  py-3 rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 text-white font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-[#EC4899] to-purple-500 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
                 <span className="relative flex items-center justify-center sm:justify-start gap-2">
@@ -229,9 +230,9 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative mt-8 lg:mt-0 backdrop-blur-sm"
+            className="relative mt-8 lg:mt-0 backdrop-blur-sm "
           >
-            <div className="relative max-w-[80%] sm:max-w-[70%] md:max-w-full mx-auto">
+            <div className="relative max-w-[80%] sm:max-w-[70%] md:max-w-full mx-auto ">
               {/* Your existing right content code */}
               {/* Decorative elements */}
               <motion.div
@@ -247,7 +248,7 @@ const Home = () => {
                 }}
               />
               <motion.div
-                className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-primary-600/30 to-blue-500/30 rounded-full blur-xl"
+                  className="absolute -bottom-4 -left-12 lg:-left-44 w-32 h-32 bg-gradient-to-r from-primary-600/30 to-blue-500/30 rounded-full blur-xl"
                 animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.3, 0.5, 0.3],
@@ -260,24 +261,15 @@ const Home = () => {
                 }}
               />
 
-              {/* Laptop SVG with enhanced animation */}
-              <motion.img
-                src={laptopSvg}
-                alt="Laptop Illustration"
-                className="w-full h-auto relative z-10 drop-shadow-2xl"
+              {/* Laptop SVG with enhanced animation lpatop*/}
+              <motion.div
+                className="w-full relative z-10 lg:-ml-12 xl:-ml-16"
                 animate={{
                   y: [-10, 10],
-                  // rotate: [-1, 1],
                 }}
                 transition={{
                   y: {
                     duration: 2,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                    ease: "easeInOut",
-                  },
-                  rotate: {
-                    duration: 3,
                     repeat: Infinity,
                     repeatType: "reverse",
                     ease: "easeInOut",
@@ -287,9 +279,14 @@ const Home = () => {
                   scale: 1.05,
                   transition: { duration: 0.3 },
                 }}
-              />
+              >
+                <Lottie 
+                  animationData={Animation} 
+                  className="w-full h-[90%] drop-shadow-2xl" 
+                />
+              </motion.div>
 
-              {/* Optional: Add floating elements around the laptop */}
+              {/* Optional: Add floating elements around the laptop chota gola upar then neeche */}
               <motion.div
                 className="absolute top-1/4 right-0 w-8 h-8 bg-primary-400/20 rounded-full blur-sm"
                 animate={{
@@ -304,7 +301,7 @@ const Home = () => {
                 }}
               />
               <motion.div
-                className="absolute bottom-1/4 left-0 w-6 h-6 bg-primary-600/20 rounded-full blur-sm"
+                className="absolute bottom-1/4 -left-6 lg:-left-24 w-6 h-6 bg-primary-600/20 rounded-full blur-sm"
                 animate={{
                   y: [10, -10],
                   x: [5, -5],

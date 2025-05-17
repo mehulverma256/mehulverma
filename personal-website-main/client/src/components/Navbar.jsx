@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
-import SidLogo from "../assets/Sid_logo.svg";
-
+import home from "../assets/home.json"
+import Lottie from "lottie-react";
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -65,13 +65,23 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <motion.img
-              src={SidLogo}
-              alt="Sid Logo"
-              className="h-12 w-auto md:h-14 lg:h-16"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            />
+            <div className="h-16 w-auto md:h-18 lg:h-20">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                style={{ height: '100%', width: 'auto' }}
+              >
+                <Lottie
+                  animationData={home}
+                  loop={true}
+                  autoplay={true}
+                  style={{ height: '100%', width: '100%' }}
+                  rendererSettings={{
+                    preserveAspectRatio: 'xMidYMid slice'
+                  }}
+                />
+              </motion.div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -99,7 +109,7 @@ const Navbar = () => {
             {/* Desktop Resume Button */}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <a
-                href="https://drive.google.com/file/d/1UdTsuqi7-gCuH3Pzt2Od--pG-5j4Oy8L/view"
+                href="https://drive.google.com/file/d/15-dpm4GOZaGcDgocW_dvcx1azSP48P2b/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-primary-600 to-primary-500 text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
@@ -205,7 +215,7 @@ const Navbar = () => {
               {/* Mobile Resume Button */}
               <motion.div whileHover={{ x: 4 }} whileTap={{ scale: 0.98 }}>
                 <a
-                  href="https://drive.google.com/file/d/1UdTsuqi7-gCuH3Pzt2Od--pG-5j4Oy8L/view"
+                  href="https://drive.google.com/file/d/15-dpm4GOZaGcDgocW_dvcx1azSP48P2b/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative block px-4 py-2 rounded-lg text-base font-medium bg-gradient-to-r from-primary-600 to-primary-500 text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
